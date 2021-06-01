@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JS</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <table class="calculadora">
+      <tr>
+          <div class="resultado">
+            <td colspan="5" class="caja">
+              <p id="textoPantalla">0</p>
+            </td>
+          </div>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button id="ret" onclick="retro()" >RETR</button>
+          </td>
+          <td colspan="2">
+              <button id="parcial" onclick="bParc()"> CE</button>
+            </td>
+          <td><button id="total" onclick="bTot()">C</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="numero('7')">7</button></td>
+          <td><button onclick="numero('8')">8</button></td>
+          <td><button onclick="numero('9')">9</button></td>
+          <td><button onclick="numero('/')">/</button></td>
+          <td><button onclick="raizC()">Raiz</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="numero('4')">4</button></td>
+          <td><button onclick="numero('5')">5</button></td>
+          <td><button onclick="numero('6')">6</button></td>
+          <td><button onclick="operar('*')">*</button></td>
+          <td><button onclick="porcent()">%</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="numero('1')">1</button></td>
+          <td><button onclick="numero('2')">2</td>
+          <td><button onclick="numero('3')">3</button></td>
+          <td><button onclick="numero('-')">-</button></td>
+          <td><button id="unox">1/x</button></td>       
+        </tr>
+        <tr>
+          <td><button onclick="numero('0')">0</button></td>
+          <td><button onclick="opuest()">+/-</button></td>
+          <td><button onclick="numero('.')">.</button></td>
+          <td><button onclick="operar('+')">+</button></td>
+          <td><button id="igual" onclick="igual()">=</button></td>           
+        </tr>
+      </table> 
+</body>
+<script src="js/script.js"></script>
+</html>
